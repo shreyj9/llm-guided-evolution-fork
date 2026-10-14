@@ -22,10 +22,10 @@ module load cuda
 export HF_HOME=/storage/ice-shared/vip-vvk/llm_storage/
 
 # Change to the repository root
-cd /storage/ice1/2/5/mgullapalli6/2/llm-guided-evolution-infrastructure
+cd /Users/shreyjain/llm-guided-evolution-fork
 
-uv run python islands_wrapper.py titanic_islands_run2 \
-    --num_islands 2 \
+uv run python islands_wrapper.py titanic_test \
+    --num_islands 1 \
     --llms llama3 \
     --prompt_groups "titanic/focused,titanic/general,titanic/roleplay"
 
